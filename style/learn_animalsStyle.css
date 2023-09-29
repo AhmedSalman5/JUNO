@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+main video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    /* اراجعها */
+    object-fit: cover; 
+}
+
+.navigation{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation li{
+    list-style: none;
+    margin: 0 10px;
+    border-radius: 4px;
+    padding: 3px 3px 0px;
+    opacity: 0.8;
+    transition: 0.5s;
+    /* background-color: rgb(232, 171, 18); */
+    background-color: white;
+}
+.navigation li:hover{
+    opacity: 1;
+}
+.navigation li img{
+    width: 130 px;
+    transition: 0.5s;
+}
+.navigation li img:hover{
+    width: 130px;
+}
